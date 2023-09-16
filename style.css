@@ -1,1 +1,16 @@
+.body-spacing {
+  margin: 0px;
+  padding: 50px 50px;
+}
 
+.content {
+  margin: 0px;
+  padding: 10px 20px;
+}
+
+.center-table-padding {
+  margin: 0px;
+  padding: 10px 10px;
+  position: relative;
+  
+}
