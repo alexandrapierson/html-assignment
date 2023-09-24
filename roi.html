@@ -87,7 +87,7 @@
           if (isNaN(investment) || isNaN(expenses) || isNaN(revenue)) {
             $('#result').text("Please enter numeric values.");
           } else if (investment == "" || expenses == "" || revenue == "") {
-            $('#result').text("Please enter all values.");
+            $('#result').text("Please enter in a number for all values.");
           } else if (investment < 0 || expenses < 0 || revenue <0) {
             $('#result').text("Please enter a non-negative value.");
           } else if (investment == 0) {
