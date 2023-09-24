@@ -85,11 +85,15 @@
           let roundedResult = round(result);
 
           if (isNaN(investment) || isNaN(expenses) || isNaN(revenue)) {
-            $('#result').text("Please enter numeric values");
+            $('#result').text("Please enter numeric values.");
+          } else if (investment == "" || expenses == "" || revenue == "") {
+            $('#result').text("Please enter all values.");
           } else if (investment < 0 || expenses < 0 || revenue <0) {
-            $('#result').text("Please enter a non-negative value");
+            $('#result').text("Please enter a non-negative value.");
+          } else if (investment == 0) {
+            $('#result').text("The initial investment cannot be 0.");
           } else {
-            $('#result').text(roundedResult);
+            $('#result').text("$" + roundedResult);
           }
         });
       });
