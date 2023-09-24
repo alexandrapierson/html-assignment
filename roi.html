@@ -91,7 +91,7 @@
           } else if (investment < 0 || expenses < 0 || revenue <0) {
             $('#result').text("Please enter a non-negative value.");
           } else if (investment == 0) {
-            $('#result').text("The initial investment cannot be 0.");
+            $('#result').text("The initial investment cannot have a value of 0.");
           } else {
             $('#result').text("$" + roundedResult);
           }
