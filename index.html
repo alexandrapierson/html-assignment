@@ -4,6 +4,11 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous">
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +32,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li>
+                <a class="nav-link" href="/roi.html">ROI Calculator</a>
               </li>
             </ul>
           </div>
@@ -79,7 +87,12 @@
       </section>
 
       <h2>Generic Nonsense</h2>
-      <section id="home-query" class="content" id="read-more">
+
+      <button id="toggleButton" class="btn btn-primary">
+        Show / Hide Read More
+      </button>
+
+      <section id="home-query" class="content read-more">
         <p>Now that the introduction is over, along with the obligatory bullet points.</p><br>
 
         <span>Are you <em>ready</em> to continue?</span><br>
@@ -103,6 +116,17 @@
       <br><span class="ms-3 mb-3 mb-md-0 text-muted">Generic - Copyright 2023</span>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('#toggleButton').click(function(){
+          $('.read-more').toggle();
+        });
+      });
+    </script>
   </body> 
 </html> 
